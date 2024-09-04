@@ -1,0 +1,50 @@
+:root {
+	--background-color: #ffffff;
+	--secondary-bkg-color: #edf2ea;
+    --third-bkg-color: rgb(222, 177, 210);
+    --purple: rgb(74, 16, 65);
+	--text-color: #111111;
+	--contrast-text-color: #edf2ea;
+	--colored-text-color: #ff8200;
+	--button-background-color: #635d5d;
+	--button-background-color-hover: #877d7c;
+	--button-background-color-active: #c7b5b3;
+	--shadow-color: rgba(0, 0, 0, 0.5);
+	--border-color: #2b2a2a;
+	--background-image: url('resource1.jpg');
+}
+
+.dark-mode {
+	--background-color: #1c1c1b;
+	--secondary-bkg-color: #120d15;
+    --third-bkg-color: #877d7c;
+    --purple: #2b2a2a;
+	--text-color: #ffffff;
+	--contrast-text-color: #120d15;
+	--colored-text-color: #ff8200;
+	--button-background-color: #bdb2b1;
+	--button-background-color-hover: #d6c7c4;
+	--button-background-color-active: #fae6e1;
+	--shadow-color: rgba(255, 255, 255, 0.25);
+	--border-color: #7f7a7a;
+	--background-image: url('resource2.jpg');
+}
+
+* {
+	transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+body {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 100vh;
+	margin: 0;
+	font-family: 'cookie', sans-serif;
+	background-size: cover;
+	background-position: center;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	background-image: var(--background-image);
+	background-position: center;
+}

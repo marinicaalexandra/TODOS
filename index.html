@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <script src="script.js"></script>
+
+    <script>
+        toggleDarkMode('false');
+    </script>
+
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1 class="centered-content titlu">TODOS</h1>
+    
+        <button class="dark-mode-button container" onclick="toggleDarkMode('true')">
+            <span style="font-size: 150%;" id="symbol-container">🔆</span>
+        </button>
+    </div>
+
+    <div class="content">
+
+        <div class="prompt" id="prompt-div">
+            <h2 class="text">What tasks do you have in mind?</h2>
+            <textarea class="container input-prompt" type="text" id="prompt" placeholder="Enter your text here..."></textarea>
+        </div>
+
+        <table id="taskTable">
+        </table>
+
+        <div>
+            <button class="add-task" onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="butoane-optiuni">
+            <button class="butonop" onclick="filterTasks('All')">All</button>
+            <button class="butonop" onclick="filterTasks('Active')">Active</button>
+            <button class="butonop" onclick="filterTasks('Completed')">Completed</button>
+        </div>
+
+        <div class="clear">
+            <button class="butonop" onclick="clearCompleted()">Clear Completed</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
